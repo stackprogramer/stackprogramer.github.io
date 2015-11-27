@@ -1,6 +1,6 @@
 
 
-####In the Name of God
+#In the Name of God
 
 ##Rahim Borumandi 
 Electronic Engineer 
@@ -10,7 +10,7 @@ Electronic Engineer
 •	09013687903 
 Summary 	Engineer Electronics, Computer science interested 
 Skills: 
-##lectronic Branch: 
+##Electronic Branch: 
 •	Design electronic circuits and  chips semiconductor   and so on.
 •	Pspice/Orcad/Hspice 
 •	Altium designer/Protel /PCB
@@ -38,26 +38,8 @@ Education :
 
 
 
-Hobbies :	Forums,math study,Rubik's Cube 
-
-	 
-
-Shiraz university 
-Engineer Electronics 
-Shiraz, Fars 
-Graduated August 2015
-GPA=16.15
-
-Shiraz university
-Master of Science Electronics
-Shiraz, Fars 
-
-
-
-
-
-
-
+##Hobbies :
+Forums,math study,Rubik's Cube
 
 https://github.com/stackprogramer
 https://sourceforge.net/u/stackprogramer/profile/
@@ -84,6 +66,16 @@ www.ifixit.com/
 
 
 
+
+##Shiraz university 
+Engineer Electronics 
+Shiraz, Fars 
+Graduated August 2015
+GPA=16.15
+
+Shiraz university
+Master of Science Electronics
+Shiraz, Fars 
 
 
 
