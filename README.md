@@ -1,13 +1,5 @@
 #In the Name of God
-```json
-   // code for coloring
-```
 
-```css
-   // code for coloring
-   
-   .ali{color:red;}
-```
 ##Rahim Borumandi 
 ```json
    Electronic Engineer 
@@ -44,17 +36,26 @@
 •	Repairman Mobile and PC,laptop
 ```
  ```json
-   // code for coloring
+ 
+ Education :
+##Shiraz university 
+    Engineer Electronics 
+   Shiraz, Fars 
+   Graduated August 2015
+   GPA=16.15
+
+   Shiraz university
+   Master of Science Electronics
+   Shiraz, Fars 
 ```
-Education :
 
 
 
 
 
 
-
-##Hobbies :
+```json
+  ##Hobbies :
 Forums,math study,Rubik's Cube
 
 https://github.com/stackprogramer
@@ -79,23 +80,15 @@ http://www.panatel.org/member.php?u=178437
 http://forum.elektor.com
 https://www.physicsforums.com/members/stackprogramer.572196/
 www.ifixit.com/
+```
 
 
 
 
-##Shiraz university 
-Engineer Electronics 
-Shiraz, Fars 
-Graduated August 2015
-GPA=16.15
-
-Shiraz university
-Master of Science Electronics
-Shiraz, Fars 
 
 
-
-Developed  Projects :for seeing Developed Projects and more info  go to githubpage.
+```json
+  Developed  Projects :for seeing Developed Projects and more info  go to githubpage.
 MypageGithub
 
 Languages: 
@@ -108,4 +101,9 @@ rahim.borumandi71@gmail.com
 
 
 
-The End
+                                               The End
+```
+
+
+
+
