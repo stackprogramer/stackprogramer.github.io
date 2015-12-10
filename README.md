@@ -1,4 +1,4 @@
-<p style='color:red'>This is some red text.</p>
+<p style="color:#FF0000;">This is some red text.</p>
 
 #In the Name of God
 ```json
