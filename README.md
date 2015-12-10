@@ -4,6 +4,12 @@
 ```json
    // code for coloring
 ```
+
+```css
+   // code for coloring
+   
+   .ali{color:red;}
+```
 ##Rahim Borumandi 
 Electronic Engineer 
 •	Iran,Fars
