@@ -1,5 +1,3 @@
-<p style="color:#FF0000;">This is some red text.</p>
-
 #In the Name of God
 ```json
    // code for coloring
@@ -11,13 +9,20 @@
    .ali{color:red;}
 ```
 ##Rahim Borumandi 
-Electronic Engineer 
+```json
+   Electronic Engineer 
 •	Iran,Fars
 •	Shiraz, Fars 
 •	rahim.borumandi71@gmail.com 
 •	09013687903 
-Summary 	Engineer Electronics, Computer science interested 
-Skills: 
+```
+```json
+  Summary 	                      Engineer Electronics, Computer
+                                      science interested 
+```
+
+```json
+ Skills: 
 ##Electronic Branch: 
 •	Design electronic circuits and  chips semiconductor   and so on.
 •	Pspice/Orcad/Hspice 
@@ -36,9 +41,12 @@ Skills:
 •	Linux Ubuntu /terminal /Network Programing 
 ##Future Objects: 
 •	FPGA 
-•	Repairman Mobile and PC,laptop 
+•	Repairman Mobile and PC,laptop
+```
+ ```json
+   // code for coloring
+```
 Education :
-
 
 
 
