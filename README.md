@@ -123,17 +123,24 @@ RCw+vw19B9KQlluZPvpW4Iv8ITsUVmah5Dzig5XQ9OLM8IuT/u4XQ66hs52VXg==
 ```
 
 most active in:
+
+##github
 https://github.com/stackprogramer/
-
+##career
 http://stackoverflow.com/cv/stackprogramer
-
+##stackoverflow
 http://stackoverflow.com/users/4569486/stackprogramer?tab=profile
-
+##Qt
+https://forum.qt.io/user/stackprogramer
+##edaboard
 http://www.edaboard.com/member572004.html
-
+##ifixit
 https://www.ifixit.com/User/1459804/stackprogramer
-
+##10fastfingers
 http://10fastfingers.com/user/1046235/
+###you tube channel:
+https://www.youtube.com/channel/UCL5VKj57OkAz09I--2sKxWQ
+
 
 
 
