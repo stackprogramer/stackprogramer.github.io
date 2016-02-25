@@ -122,6 +122,14 @@ RCw+vw19B9KQlluZPvpW4Iv8ITsUVmah5Dzig5XQ9OLM8IuT/u4XQ66hs52VXg==
                                                The End
 ```
 
+most active in:
+https://github.com/stackprogramer/
+http://stackoverflow.com/cv/stackprogramer
+http://stackoverflow.com/users/4569486/stackprogramer?tab=profile
+http://www.edaboard.com/member572004.html
+https://www.ifixit.com/User/1459804/stackprogramer
+http://10fastfingers.com/user/1046235/
+
 
 
 
