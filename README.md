@@ -126,6 +126,8 @@ most active in:
 
 ##github
 https://github.com/stackprogramer/
+##codeproject
+http://www.codeproject.com/Members/stackprogramer
 ##career
 http://stackoverflow.com/cv/stackprogramer
 ##stackoverflow
