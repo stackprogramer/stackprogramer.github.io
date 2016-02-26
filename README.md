@@ -140,7 +140,7 @@ http://www.edaboard.com/member572004.html
 https://www.ifixit.com/User/1459804/stackprogramer
 ##10fastfingers
 http://10fastfingers.com/user/1046235/
-###you tube channel:
+###youtube channel:
 https://www.youtube.com/channel/UCL5VKj57OkAz09I--2sKxWQ
 
 
