@@ -41,7 +41,7 @@ body {
   font-size: 20px;
   cursor: pointer;
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  transition: all .1s;
+  transition: all 5s;
 }
 
 .selector button:hover { background: #3071a9; }
@@ -64,8 +64,8 @@ body {
   width: 0;
   height: 100%;
   margin: 0 50%;
-  -webkit-transform: rotate(-360deg);
-  transition: all 0.8s ease-in-out;
+  -webkit-transform: rotate(-400deg);
+  transition: all 32s ease-in-out;
 }
 
 .selector li input { display: none; }
@@ -85,7 +85,7 @@ body {
   overflow: hidden;
   cursor: pointer;
   box-shadow: none;
-  transition: all 0.8s ease-in-out, color 0.1s, background 0.1s;
+  transition: all 3s ease-in-out, color 0.1s, background 0.1s;
 }
 
 .selector li input + label:hover { background: #f0f0f0; }
@@ -108,8 +108,8 @@ body {
 </style>
 </head>
 
-<body>
-<h1 align="center">stackprogramer</h1>
+<body  >
+<h4 align="center">stackprogramer</h4>
 <div class='selector'>
   <ul>
     <li>
@@ -123,7 +123,7 @@ body {
     </li>
     <li>
       <input id='c2' type='checkbox'>
-      <label for='c2'>Menu 2</label>
+      <label for='c2'onLoad="generate();">Menu 2</label>
     </li>
     <li>
       <input id='c3' type='checkbox'>
@@ -150,10 +150,12 @@ body {
       <label for='c8'>Menu 8</label>
     </li>
   </ul>
-  <button>Click to toggle the menus</button>
+  <button>Click to merry go ground</button>
 </div>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script><script>var nbOptions = 8;
-var angleStart = -44440;
+<script src="jquery-2.2.1.min.js"></script>
+<script>
+var nbOptions =8;
+var angleStart = -1000000;
 
 // jquery rotate animation
 function rotate(li,d) {
@@ -166,42 +168,36 @@ function rotate(li,d) {
 				  
 				  
         }, 
-		duration: 500
 		
+		duration: 2000
+
     });
 }
+
 
 // show / hide the options
 function toggleOptions(s) {
     $(s).toggleClass('open');
     var li = $(s).find('li');
+	
     var deg = $(s).hasClass('half') ? 180/(li.length-1) : 360/li.length;
+
     for(var i=0; i<li.length; i++) {
-        var d = $(s).hasClass('half') ? (i*deg)-90 : i*deg;
-        $(s).hasClass('open') ? rotate(li[i],d) : rotate(li[i],angleStart);
+     
+ var d = $(s).hasClass('half') ? (i*deg)-90 : i*deg;
+ $(s).hasClass('open')?rotate(li[i],d):rotate(li[i],angleStart);
     }
 }
+
 
 $('.selector button').click(function(e) {
     toggleOptions($(this).parent());
 });
+		setTimeout(function() { toggleOptions('.selector'); },1);//@ sourceURL=pen.js
 
-setTimeout(function() { toggleOptions('.selector'); }, 100);//@ sourceURL=pen.js
-</script>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
 
 </script>
+
 
 </body>
 </html>
