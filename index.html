@@ -3,15 +3,120 @@
 <head>
 <meta charset="utf-8">
 <title>stackprogramer</title>
-<style>
-html,
-body { height: 100%; }
+<!-- first drop css
+ -->
+ <style>
+ 
+ #dialog-overlay {
 
+	/* set it to fill the whil screen */
+	width:100%; 
+	height:100%;
+	
+	/* transparency for different browsers */
+	filter:alpha(opacity=50); 
+	-moz-opacity:0.5; 
+	-khtml-opacity: 0.5; 
+	opacity: 0.5; 
+	background:#000; 
+
+	/* make sure it appear behind the dialog box but above everything else */
+	position:absolute; 
+	top:0; left:0; 
+	z-index:3000; 
+
+	/* hide it by default */
+	display:none;
+}
+
+
+#dialog-box {
+	
+	/* css3 drop shadow */
+	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+	
+	/* css3 border radius */
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+	
+	background:#eee;
+	/* styling of the dialog box, i have a fixed dimension for this demo */ 
+	width:328px; 
+	
+	/* make sure it has the highest z-index */
+	position:absolute; 
+	z-index:5000; 
+
+	/* hide it by default */
+	display:none;
+}
+
+#dialog-box .dialog-content {
+	/* style the content */
+	text-align:left; 
+	padding:10px; 
+	margin:13px;
+	color:#666; 
+	font-family:arial;
+	font-size:11px; 
+}
+
+a.button {
+	/* styles for button */
+	margin:10px auto 0 auto;
+	text-align:center;
+	display: block;
+	width:50px;
+	padding: 5px 10px 6px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	line-height: 1;
+	
+	/* button color */
+	background-color: #e33100;
+	
+	/* css3 implementation :) */
+	/* rounded corner */
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	
+	/* drop shadow */
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	
+	/* text shaow */
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);
+	position: relative;
+	cursor: pointer;
+	
+}
+
+a.button:hover {
+	background-color: #c33100;	
+}
+
+/* extra styling */
+#dialog-box .dialog-content p {
+	font-weight:700; margin:0;
+}
+
+#dialog-box .dialog-content ul {
+	margin:10px 0 10px 20px; 
+	padding:0; 
+	height:50px;
+}
+</style>
+<!-- end drop css -->
+<style>
 body {
+height:130%;
   margin: 0;
   background-image:url("back.png");
-  overflow: hidden;
-}
+<!--   overflow: hidden;
+ -->}
 
 .selector {
   position: absolute;
@@ -31,22 +136,19 @@ body {
 
 .selector button {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   padding: 10px;
-  background: #428bca;
+  background:transparent;
   border-radius: 50%;
   border: 0;
   color: white;
   font-size: 20px;
   cursor: pointer;
-  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  transition: all 5s;
+  transition: all 1s;
 }
 
-.selector button:hover { background: #3071a9; }
 
-.selector button:focus { outline: none; }
 
 .selector ul {
   position: absolute;
@@ -65,7 +167,7 @@ body {
   height: 100%;
   margin: 0 50%;
   -webkit-transform: rotate(-400deg);
-  transition: all 32s ease-in-out;
+  transition: all 3s ease-in-out;
 }
 
 .selector li input { display: none; }
@@ -85,6 +187,7 @@ body {
   overflow: hidden;
   cursor: pointer;
   box-shadow: none;
+
   transition: all 3s ease-in-out, color 0.1s, background 0.1s;
 }
 
@@ -107,8 +210,8 @@ body {
 }
 .circle {
   display: block;
-  width: 110px;
-  height: 110px;
+  width: 80px;
+  height: 80px;
   margin: 1em auto;
   background-size: cover;
   background-repeat: no-repeat;
@@ -119,6 +222,69 @@ body {
   border: 5px solid #eee;
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
 }
+.steer{
+  display: block;
+  width: 250px;
+  height: 250px;
+  position:relative;
+  top:-10%;
+  margin: 1em auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;
+  border-radius: 99em;
+  border: 5px solid #eee;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
+  
+}
+
+</style>
+
+<style type='text/css'>
+
+/* footer-wrap */
+#footer-wrap {
+  clear: both;
+  font-size: 95%;
+  padding: 20px 0;
+ 
+  text-align: left;  
+}
+#footer-wrap a {
+  text-decoration: none;
+  color: #666666;
+  font-weight: bold;
+}
+#footer-wrap a:hover {
+  color: #000;  
+}
+#footer-wrap p {
+  padding: 10px 0;
+}
+#footer-wrap h2 {
+  color: #666666;
+  margin: 0;
+  padding: 0 10px; 
+}
+
+/* footer */
+#footer {
+  clear: both;
+  color: #666;  
+  position:absolute;
+  left:-250%;
+bottom:-100%;
+right:-250%;
+  margin: 0 auto 10px auto; 
+  width: 1200px;
+  padding: 5px 0;
+  text-align: center;
+  background: #F8F7F7;
+  border-top: 1px solid #F2F2F2;  
+}
+
 </style>
 </head>
 <script type="text/javascript"
@@ -127,64 +293,99 @@ body {
     &width=400&height=400&format=png&delay=10000">
 </script>
 <body  >
-<h4 align="center">stackprogramer</h4>
 <div class='selector'>
   <ul>
    <a href="http://www.codeproject.com/script/Membership/View.aspx?mid=12352100">
     <li>
-     <input id='c1' type='checkbox'>
+     <input id='c5' type='checkbox'>
       <label for='c1' class="circle"><img  src="codeproject.gif" width="150" height="150" ></label>
     </li>
 	</a >
     <li>
-     <a href="http://www.edaboard.com/member572004.html"> <input id='c2' type='checkbox'>
+     <a href="http://www.edaboard.com/member572004.html"> <input id='c5' type='checkbox'>
       <label for='c2' class="circle"><img  src="edaboard.jpg" width="130" height="130" ></label></a>
     </li>
    <li>
-     <a  href="https://forum.qt.io/user/stackprogramer"> <input id='c3' type='checkbox'>
+     <a  href="https://forum.qt.io/user/stackprogramer"> <input id='c5' type='checkbox'>
       <label for='c3' class="circle"><img  src="Qt.png" width="120" height="130" ></label></a>
     </li>
     <li>
-      <a href="https://github.com/stackprogramer"><input id='c4' type='checkbox'>
-      <label for='c4' class="circle"><img  src="github.jpg" width="130" height="130" ></label></a>
+     <a  href="https://github.com/stackprogramer"> <input id='c5' type='checkbox'>
+      <label for='c6' class="circle"><img  src="github.jpg" width="130" height="130" ></label></a>
+    </li>
+     <li>
+     <a  href="http://10fastfingers.com/user/1046235/"> <input id='c5' type='checkbox'>
+      <label for='c6' class="circle"><img  src="10fastfinger.jpg" width="130" height="130" ></label></a>
+    </li>
+     <li>
+     <a  href="https://www.youtube.com/channel/UCL5VKj57OkAz09I--2sKxWQ"> <input id='c5' type='checkbox'>
+      <label for='c6' class="circle"><img  src="youtube.jpg" width="130" height="130" ></label></a>
+    </li>
+     <li>
+     <a  href="http://stackexchange.com/users/5792580/stackprogramer"> <input id='c5' type='checkbox'>
+      <label for='c7' class="circle"><img  src="stackexchange.jpg" width="130" height="130" ></label></a>
     </li>
     <li>
      <a  href="http://10fastfingers.com/user/1046235/"> <input id='c5' type='checkbox'>
-      <label for='c5' class="circle"><img  src="10fastfinger.jpg" width="130" height="130" ></label></a>
-    </li>
-    <li>
-      <input id='c6' type='checkbox'>
-      <label for='c6'>Menu 6</label>
-    </li>
-    <li>
-      <input id='c7' type='checkbox'>
-      <label for='c7'>Menu 7</label>
-    </li>
-    <li>
-      <input id='c8' type='checkbox'>
-      <label for='c8'>Menu 8</label>
+      <label for='c8' class="circle"><img  src="resume.png" width="130" height="130" ></label></a>
     </li>
   </ul>
-  <button>Click to merry go ground</button>
+  <button ><img  class="steer" src="steership.png"  ></button>
+   <div id="dialog-overlay"><p>kkkk</p></div>
+<div id="dialog-box">
+	<div class="dialog-content">
+		<div id="dialog-message">jjjjjj</div>
+		<a href="#" class="button">Close</a>
+	</div>
 </div>
+  
+  <!-- footer starts -->      
+  <div id="footer-wrap"><div id="footer">        
+     
+      <p>
+      &copy; 2015 stackprogramer.com
+
+            &nbsp;&nbsp;&nbsp;&nbsp;
+
+      Design by <a href="http://www.styleshout.com/">stackprogramer</a> 
+
+         </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      
+      <a href="index.html">Home</a> |
+           <a href="index.html" onclick="popup('d');">Demo resume</a> |
+      </p>
+      
+  </div></div>
+  <!-- footer ends-->  
+
 <script src="jquery-2.2.1.min.js"></script>
 <script>
 var nbOptions =8;
-var angleStart = -1000000;
+var angleStart = -1080;
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
 
 // jquery rotate animation
 function rotate(li,d) {
     $({d:angleStart}).animate({d:d}, {
         step: function(now) {
             $(li)
+			
                .css({ transform: 'rotate('+now+'deg)' })
                .find('label')
-                  .css({ transform: 'rotate('+(-now)+'deg)' });
+                  .css({ transform: ' rotate('+(-now)+'deg)' });
 				  
 				  
         }, 
 		
-		duration: 2000
+		
+		duration: 500
 
     });
 }
@@ -210,6 +411,48 @@ $('.selector button').click(function(e) {
 });
 		setTimeout(function() { toggleOptions('.selector'); },1);//@ sourceURL=pen.js
 
+
+</script>
+<!-- start pop up window
+ --><script>
+ $(document).ready(function () {
+
+	// if user clicked on button, the overlay layer or the dialogbox, close the dialog	
+	$('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {		
+		$('#dialog-overlay, #dialog-box').hide();		
+		return false;
+	});
+	
+	// if user resize the window, call the same function again
+	// to make sure the overlay fills the screen and dialogbox aligned to center	
+	$(window).resize(function () {
+		
+		//only do it if the dialog box is not hidden
+		if (!$('#dialog-box').is(':hidden')) popup();		
+	});	
+	
+	
+});
+
+//Popup dialog
+function popup(message) {
+		
+	// get the screen height and width  
+	var maskHeight = $(document).height();  
+	var maskWidth = $(window).width();
+	
+	// calculate the values for center alignment
+	var dialogTop =  (maskHeight/3) - ($('#dialog-box').height());  
+	var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2); 
+	
+	// assign values to the overlay and dialog box
+	$('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
+	$('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
+	
+	// display the message
+	$('#dialog-message').html(message);
+			
+}
 
 </script>
 
