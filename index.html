@@ -41,7 +41,7 @@
 	
 	background:#eee;
 	/* styling of the dialog box, i have a fixed dimension for this demo */ 
-	width:328px; 
+	width:628px; 
 	
 	/* make sure it has the highest z-index */
 	position:absolute; 
@@ -58,7 +58,8 @@
 	margin:13px;
 	color:#666; 
 	font-family:arial;
-	font-size:11px; 
+	font-size:16px; 
+	font-weight:bold;
 }
 
 a.button {
@@ -236,8 +237,10 @@ height:130%;
   border-radius: 99em;
   border: 5px solid #eee;
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3); 
+
   
 }
+
 
 </style>
 
@@ -286,11 +289,7 @@ right:-250%;
 
 </style>
 </head>
-<script type="text/javascript"
-    src="http://grabz.it/services/javascript.ashx?key=APPLICATION KEY
-    &url=http://www.google.com
-    &width=400&height=400&format=png&delay=10000">
-</script>
+
 <body  >
 <div id="dialog-overlay"><p>kkkk</p></div>
 <div id="dialog-box">
@@ -332,7 +331,7 @@ right:-250%;
       <label for='c7' class="circle"><img  src="stackexchange.jpg" width="130" height="130" ></label></a>
     </li>
     <li>
-     <a  href="http://10fastfingers.com/user/1046235/"> <input id='c5' type='checkbox'>
+     <a  href="Rahim Borumandi-en.pdf"> <input id='c5' type='checkbox'>
       <label for='c8' class="circle"><img  src="resume.png" width="130" height="130" ></label></a>
     </li>
   </ul>
@@ -347,12 +346,13 @@ right:-250%;
 
             &nbsp;&nbsp;&nbsp;&nbsp;
 
-      Design by <a href="http://www.styleshout.com/">stackprogramer</a> 
+      Design by <a href="Rahim Borumandi-en.pdf">stackprogramer</a> 
 
          </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       
-      <a href="index.html">Home</a> 
-           <a  onclick="popup('d');">Demo resume</a> |
+      <a  href="index.html">Home</a> |
+           <a  onclick="$contentResumeEnable='1';
+           popup($contentResumeEnable);">Demo resume help</a> |
       </p>
       
   </div></div>
@@ -402,6 +402,7 @@ function toggleOptions(s) {
      
  var d = $(s).hasClass('half') ? (i*deg)-90 : i*deg;
  $(s).hasClass('open')?rotate(li[i],d):rotate(li[i],angleStart);
+
     }
 }
 
@@ -413,8 +414,11 @@ $('.selector button').click(function(e) {
 
 
 </script>
-<!-- start pop up window
- --><script>
+<!-- start pop up window -->
+
+
+
+<script>
  $(document).ready(function () {
 
 	// if user clicked on button, the overlay layer or the dialogbox, close the dialog	
@@ -450,7 +454,10 @@ function popup(message) {
 	$('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
 	
 	// display the message
-	$('#dialog-message').html(message);
+	 $.get('demoresumehelp.txt', function(demoresumehelp) {
+      $("#dialog-message").html(demoresumehelp);
+    }, 'text');
+	
 			
 }
 
