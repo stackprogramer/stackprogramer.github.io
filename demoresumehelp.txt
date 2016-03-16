@@ -1,7 +1,18 @@
 Hi welcome to seeing my resum:
+
+I am a electronic engineer and computer science.
+My interest :
+<hr>
+Circuit Design,Orcad,Hspice,Silvaco,Lumerical
+Microcontroller ,Embed System,PCB and Software Altium Designer,FPGA,PLD,Xilinx
+<hr>
+JAVA,C++,Qt,AndroidDeveloper,LinuxDebian,
+Image processing,Matlab,OPENCV
+html,css,js,jquery,php,laravel,joomla
+,wordpress
+<hr>
 i am active in this websites.
 you can download pdf my resume from pdf icon in merry go round.
-
-
+<hr>
 thanks for attention 
 Best regards! stackprogramer
