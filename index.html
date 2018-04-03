@@ -6,115 +6,7 @@
 <link rel="stylesheet" href="css/stylelist.css">
 
 <!-- first drop css -->
- <style>
- 
- #dialog-overlay {
- 
-	/* set it to fill the whil screen */
-	width:100%; 
-	height:100%;
-	
-	/* transparency for different browsers */
-	filter:alpha(opacity=50); 
-	-moz-opacity:0.5; 
-	-khtml-opacity: 0.5; 
-	opacity: 0.5; 
-	background:#000; 
-
-	/* make sure it appear behind the dialog box but above everything else */
-	position:absolute; 
-	top:0; left:0; 
-	z-index:3000; 
-
-	/* hide it by default */
-	display:none;
-}
-
-
-#dialog-box {
-	
-	/* css3 drop shadow */
-	-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-	
-	/* css3 border radius */
-	-moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-	
-	background:#FFF;
-	/* styling of the dialog box, i have a fixed dimension for this demo */ 
-	width:628px; 
-  border-radius: 25px;
-
-	
-	/* make sure it has the highest z-index */
-	position:absolute; 
-	z-index:5000; 
-
-	/* hide it by default */
-	display:none;
-}
-
-#dialog-box .dialog-content {
-	/* style the content */
-	text-align:left; 
-	padding:10px; 
-	margin:13px;
-	color:green; 
-	font-family:arial;
-	font-size:16px; 
-	font-weight:bold;
-}
-
-a.button {
-	/* styles for button */
-	margin:10px auto 0 auto;
-	text-align:center;
-	display: block;
-	width:50px;
-	padding: 5px 10px 6px;
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-	line-height: 1;
-	
-	/* button color */
-	background-color:green;
-  border-radius: 5px;
-	
-	/* css3 implementation :) */
-	/* rounded corner */
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	
-	/* drop shadow */
-	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
-	
-	/* text shaow */
-	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
-	border-bottom: 1px solid rgba(0,0,0,0.25);
-	position: relative;
-	cursor: pointer;
-	
-}
-
-a.button:hover {
-	background-color: #FFF;	
-  color:#000;
-}
-
-/* extra styling */
-#dialog-box .dialog-content p {
-	font-weight:700; margin:0;
-}
-
-#dialog-box .dialog-content ul {
-	margin:10px 0 10px 20px; 
-	padding:0; 
-	height:50px;
-}
-</style>
+ <style>#dialog-overlay{width:100%;height:100%;filter:alpha(opacity=50);-moz-opacity:.5;-khtml-opacity:.5;opacity:.5;background:#000;position:absolute;top:0;left:0;z-index:3000;display:none}#dialog-box{-webkit-box-shadow:0 0 10px rgba(0,0,0,.5);-moz-box-shadow:0 0 10px rgba(0,0,0,.5);-moz-border-radius:5px;-webkit-border-radius:5px;background:#fff;width:628px;border-radius:25px;position:absolute;z-index:5000;display:none}#dialog-box .dialog-content{text-align:left;padding:10px;margin:13px;color:green;font-family:arial;font-size:16px;font-weight:bold}a.button{margin:10px auto 0 auto;text-align:center;display:block;width:50px;padding:5px 10px 6px;color:#fff;text-decoration:none;font-weight:bold;line-height:1;background-color:green;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-moz-box-shadow:0 1px 3px rgba(0,0,0,.5);-webkit-box-shadow:0 1px 3px rgba(0,0,0,.5);text-shadow:0 -1px 1px rgba(0,0,0,.25);border-bottom:1px solid rgba(0,0,0,.25);position:relative;cursor:pointer}a.button:hover{background-color:#fff;color:#000}#dialog-box .dialog-content p{font-weight:700;margin:0}#dialog-box .dialog-content ul{margin:10px 0 10px 20px;padding:0;height:50px}</style>
 <!-- end drop css -->
 <style>
 body {
@@ -250,61 +142,20 @@ height:180%;
 
 </style>
 
-<style type='text/css'>
-
-/* footer-wrap */
-#footer-wrap {
-  clear: both;
-  font-size: 95%;
-  padding: 20px 0;
- 
-  text-align: left;  
-}
-#footer-wrap a {
-  text-decoration: none;
-  color: #666666;
-  font-weight: bold;
-}
-#footer-wrap a:hover {
-  color: #000;  
-}
-#footer-wrap p {
-  padding: 10px 0;
-}
-#footer-wrap h2 {
-  color: #666666;
-  margin: 0;
-  padding: 0 10px; 
-}
-
-/* footer */
-#footer {
-  clear: both;
-  color: #666;  
-  position:absolute;
-  left:-250%;
-bottom:-100%;
-right:-250%;
-  margin: 0 auto 10px auto; 
-  width: 1200px;
-  padding: 5px 0;
-  text-align: center;
-  background: #F8F7F7;
-  border-top: 1px solid #F2F2F2;  
-}
-
-</style>
+<style type='text/css'>#footer-wrap{clear:both;font-size:95%;padding:20px 0;text-align:left}#footer-wrap a{text-decoration:none;color:#666;font-weight:bold}#footer-wrap a:hover{color:#000}#footer-wrap p{padding:10px 0}#footer-wrap h2{color:#666;margin:0;padding:0 10px}#footer{clear:both;color:#666;position:absolute;left:-250%;bottom:-100%;right:-250%;margin:0 auto 10px auto;width:1200px;padding:5px 0;text-align:center;background:#f8f7f7;border-top:1px solid #f2f2f2}</style>
 </head>
 
-<body  >
+<body>
 <div class="rr rr-left">
 	<div>
 		
-	<a  style="position:relative;top:-10px;left:0%;font-size:18px;color:#FFF;" href="http://blog.stackprogramer.xyz/"> <img  src="img/logo.png" width="50" height="50" >Stack Design Blog</a>
+	<a style="position:relative;top:-10px;left:0%;font-size:18px;color:#FFF;" href="http://blog.stackprogramer.xyz/"> <script data-pagespeed-no-defer>//<![CDATA[
+(function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];return a}return[]};function w(b){var c=window;if(c.addEventListener)c.addEventListener("load",b,!1);else if(c.attachEvent)c.attachEvent("onload",b);else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=d;this.b={};this.a=[];this.c={}}function z(b,c){var a,d,e=c.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=c.offsetWidth&&0>=c.offsetHeight)a=!1;else{d=c.getBoundingClientRect();var f=document.body;a=d.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);d=d.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+d;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&d<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}y.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&z(this,b)};u("pagespeed.CriticalImages.checkImageForCriticality",function(b){x.checkImageForCriticality(b)});u("pagespeed.CriticalImages.checkCriticalImages",function(){A(x)});function A(b){b.b={};for(var c=["IMG","INPUT"],a=[],d=0;d<c.length;++d)a=a.concat(v(document.getElementsByTagName(c[d])));if(a.length&&a[0].getBoundingClientRect){for(d=0;c=a[d];++d)z(b,c);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(c=!!b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),d=1;d<b.a.length;++d){var e=","+encodeURIComponent(b.a[d]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(B())),131072>=a.length+e.length&&(a+=e),c=!0);C=a;if(c){d=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(r){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(D){}}f&&(f.open("POST",d+(-1==d.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function B(){var b={},c;c=document.getElementsByTagName("IMG");if(!c.length)return{};var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";u("pagespeed.CriticalImages.getBeaconData",function(){return C});u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','http://stackprogramer.xyz/','oG-7lxx8_G',true,false,'gRWiTaUaAEo');
+//]]></script><img src="img/logo.png" width="50" height="50" data-pagespeed-url-hash="1495402671" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">Stack Design Blog</a>
 
-	<a  style="position:relative;top:-10px;left:0%;font-size:18px;color:#FFF;" href="https://telegram.me/stackprogramerbot"> <img  src="img/telegrambot.png" width="50" height="50" >Telegram Bot</a>
-	<a  style="position:relative;top:-10px;left:0%;font-size:18px;color:#FFF;" href="http://blog.stackprogramer.xyz/"> <img  src="img/dissertation.png" width="50" height="50" >
-    Dissertation
+	<a style="position:relative;top:-10px;left:0%;font-size:18px;color:#FFF;" href="https://telegram.me/stackprogramerbot"> <img src="img/telegrambot.png" width="50" height="50" data-pagespeed-url-hash="1163645584" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">Telegram Bot</a>
+	<a style="position:relative;top:-10px;left:0%;font-size:18px;color:#FFF;" href="http://blog.stackprogramer.xyz/"> <img src="img/dissertation.png" width="50" height="50" data-pagespeed-url-hash="1341583095" onload="pagespeed.CriticalImages.checkImageForCriticality(this);">
+   Thesis
 	</a>
        
 	</div>
@@ -327,39 +178,39 @@ right:-250%;
    <a href="http://www.codeproject.com/script/Membership/View.aspx?mid=12352100">
     <li>
      <input id='c5' type='checkbox'>
-      <label for='c1' class="circle"><img  src="codeproject.gif" width="150" height="150" ></label>
+      <label for='c1' class="circle"><img src="codeproject.gif" width="150" height="150" data-pagespeed-url-hash="1217351789" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></label>
     </li>
-	</a >
+	</a>
     <li>
      <a href="http://www.edaboard.com/member572004.html"> <input id='c5' type='checkbox'>
-      <label for='c2' class="circle"><img  src="edaboard.jpg" width="130" height="130" ></label></a>
+      <label for='c2' class="circle"><img src="edaboard.jpg" width="130" height="130" data-pagespeed-url-hash="3656587292" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></label></a>
     </li>
    <li>
-     <a  href="https://forum.qt.io/user/stackprogramer"> <input id='c5' type='checkbox'>
-      <label for='c3' class="circle"><img  src="Qt.png" width="120" height="130" ></label></a>
+     <a href="https://forum.qt.io/user/stackprogramer"> <input id='c5' type='checkbox'>
+      <label for='c3' class="circle"><img src="Qt.png" width="120" height="130" data-pagespeed-url-hash="2140194435" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></label></a>
     </li>
     <li>
-     <a  href="https://github.com/stackprogramer"> <input id='c5' type='checkbox'>
-      <label for='c6' class="circle"><img  src="github.jpg" width="130" height="130" ></label></a>
+     <a href="https://github.com/stackprogramer"> <input id='c5' type='checkbox'>
+      <label for='c6' class="circle"><img src="github.jpg" width="130" height="130" data-pagespeed-url-hash="52945951" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></label></a>
     </li>
      <li>
-     <a  href="http://10fastfingers.com/user/1046235/"> <input id='c5' type='checkbox'>
-      <label for='c6' class="circle"><img  src="10fastfinger.jpg" width="130" height="130" ></label></a>
+     <a href="http://10fastfingers.com/user/1046235/"> <input id='c5' type='checkbox'>
+      <label for='c6' class="circle"><img src="10fastfinger.jpg" width="130" height="130" data-pagespeed-url-hash="3709176636" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></label></a>
     </li>
      <li>
-     <a  href="https://www.youtube.com/channel/UCL5VKj57OkAz09I--2sKxWQ"> <input id='c5' type='checkbox'>
-      <label for='c6' class="circle"><img  src="youtube.jpg" width="130" height="130" ></label></a>
+     <a href="https://www.youtube.com/channel/UCL5VKj57OkAz09I--2sKxWQ"> <input id='c5' type='checkbox'>
+      <label for='c6' class="circle"><img src="youtube.jpg" width="130" height="130" data-pagespeed-url-hash="1050721813" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></label></a>
     </li>
      <li>
-     <a  href="http://stackexchange.com/users/5792580/stackprogramer"> <input id='c5' type='checkbox'>
-      <label for='c7' class="circle"><img  src="stackexchange.jpg" width="130" height="130" ></label></a>
+     <a href="http://stackexchange.com/users/5792580/stackprogramer"> <input id='c5' type='checkbox'>
+      <label for='c7' class="circle"><img src="stackexchange.jpg" width="130" height="130" data-pagespeed-url-hash="1575999365" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></label></a>
     </li>
     <li>
-     <a  href="stackprogramer.pdf"> <input id='c5' type='checkbox'>
-      <label for='c8' class="circle"><img  src="resume.png" width="130" height="130" ></label></a>
+     <a href="stackprogramer.pdf"> <input id='c5' type='checkbox'>
+      <label for='c8' class="circle"><img src="resume.png" width="130" height="130" data-pagespeed-url-hash="3343925089" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></label></a>
     </li>
   </ul>
-  <button ><img  class="steer" src="steership.png"  ></button>
+  <button><img class="steer" src="steership.png" data-pagespeed-url-hash="490296567" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></button>
    
   <!--list starts-->
   
@@ -370,7 +221,7 @@ right:-250%;
   <div id="footer-wrap"><div id="footer">        
      
       <p>
-      &copy; 2015 stackprogramer.com
+      &copy; 2015-2017 stackprogramer.xyz
 
             &nbsp;&nbsp;&nbsp;&nbsp;
 
@@ -378,119 +229,40 @@ right:-250%;
 
          </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
       
-      <a  href="index.html">Home</a> |
-           <a  onclick="$contentResumeEnable='1';
+      <a href="index.html">Home</a> |
+           <a onclick="$contentResumeEnable='1';
            popup($contentResumeEnable);">Demo resume help</a> |
-      </p>
       
-  </div></div>
+      
+      
+         <!-- Begin WebGozar.com Counter code -->
+<script type="text/javascript" language="javascript" src="http://www.webgozar.ir/c.aspx?Code=3697941&amp;t=counter"></script>
+<noscript><a href="http://www.webgozar.com/counter/stats.aspx?code=3697941" target="_blank">&#1570;&#1605;&#1575;&#1585;</a></noscript>
+<!-- End WebGozar.com Counter code -->
+
+
+
+<script type='text/javascript' src='http://webshomar.com/rx/?counter/stat/8524/423f1c893a21196c9ca1a61ac83586fd/script.js'></script>
+  </p>    
+  </div>
+ 
+  </div>
   <!-- footer ends-->  
 
-<script src="jquery-2.2.1.min.js"></script>
-<script>
-var nbOptions =8;
-var angleStart = -1080;
-function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
-    }
-  }
-}
-
-// jquery rotate animation
-function rotate(li,d) {
-    $({d:angleStart}).animate({d:d}, {
-        step: function(now) {
-            $(li)
-			
-               .css({ transform: 'rotate('+now+'deg)' })
-               .find('label')
-                  .css({ transform: ' rotate('+(-now)+'deg)' });
-				  
-				  
-        }, 
-		
-		
-		duration: 500
-
-    });
-}
-
-
-// show / hide the options
-function toggleOptions(s) {
-    $(s).toggleClass('open');
-    var li = $(s).find('li');
-	
-    var deg = $(s).hasClass('half') ? 180/(li.length-1) : 360/li.length;
-
-    for(var i=0; i<li.length; i++) {
-     
- var d = $(s).hasClass('half') ? (i*deg)-90 : i*deg;
- $(s).hasClass('open')?rotate(li[i],d):rotate(li[i],angleStart);
-
-    }
-}
-
-
-$('.selector button').click(function(e) {
-    toggleOptions($(this).parent());
-});
-		setTimeout(function() { toggleOptions('.selector'); },1);//@ sourceURL=pen.js
-
-
-</script>
+<script src="jquery-2.2.1.min.js.pagespeed.jm.QwDZyK_Lba.js"></script>
+<script>var nbOptions=8;var angleStart=-1080;function sleep(milliseconds){var start=new Date().getTime();for(var i=0;i<1e7;i++){if((new Date().getTime()-start)>milliseconds){break;}}}function rotate(li,d){$({d:angleStart}).animate({d:d},{step:function(now){$(li).css({transform:'rotate('+now+'deg)'}).find('label').css({transform:' rotate('+(-now)+'deg)'});},duration:500});}function toggleOptions(s){$(s).toggleClass('open');var li=$(s).find('li');var deg=$(s).hasClass('half')?180/(li.length-1):360/li.length;for(var i=0;i<li.length;i++){var d=$(s).hasClass('half')?(i*deg)-90:i*deg;$(s).hasClass('open')?rotate(li[i],d):rotate(li[i],angleStart);}}$('.selector button').click(function(e){toggleOptions($(this).parent());});setTimeout(function(){toggleOptions('.selector');},1);</script>
 <!-- start pop up window -->
 
 
 
-<script>
- $(document).ready(function () {
-
-	// if user clicked on button, the overlay layer or the dialogbox, close the dialog	
-	$('a.btn-ok, #dialog-overlay, #dialog-box').click(function () {		
-		$('#dialog-overlay, #dialog-box').hide();		
-		return false;
-	});
-	
-	// if user resize the window, call the same function again
-	// to make sure the overlay fills the screen and dialogbox aligned to center	
-	$(window).resize(function () {
-		
-		//only do it if the dialog box is not hidden
-		if (!$('#dialog-box').is(':hidden')) popup();		
-	});	
-	
-	
-});
-
-//Popup dialog
-function popup(message) {
-		
-	// get the screen height and width  
-	var maskHeight = $(document).height();  
-	var maskWidth = $(window).width();
-	
-	// calculate the values for center alignment
-	var dialogTop =  (maskHeight/3) - ($('#dialog-box').height());  
-	var dialogLeft = (maskWidth/2) - ($('#dialog-box').width()/2); 
-	
-	// assign values to the overlay and dialog box
-	$('#dialog-overlay').css({height:maskHeight, width:maskWidth}).show();
-	$('#dialog-box').css({top:dialogTop, left:dialogLeft}).show();
-	
-	// display the message
-	 $.get('demoresumehelp.txt', function(demoresumehelp) {
-      $("#dialog-message").html(demoresumehelp);
-    }, 'text');
-	
-			
-}
-
-</script>
-
+<script>$(document).ready(function(){$('a.btn-ok, #dialog-overlay, #dialog-box').click(function(){$('#dialog-overlay, #dialog-box').hide();return false;});$(window).resize(function(){if(!$('#dialog-box').is(':hidden'))popup();});});function popup(message){var maskHeight=$(document).height();var maskWidth=$(window).width();var dialogTop=(maskHeight/3)-($('#dialog-box').height());var dialogLeft=(maskWidth/2)-($('#dialog-box').width()/2);$('#dialog-overlay').css({height:maskHeight,width:maskWidth}).show();$('#dialog-box').css({top:dialogTop,left:dialogLeft}).show();$.get('demoresumehelp.txt',function(demoresumehelp){$("#dialog-message").html(demoresumehelp);},'text');}</script>
+				
+<!-- Start Open Web Analytics Tracker -->
+<script type="text/javascript">//<![CDATA[
+var owa_baseUrl='http://blog.stackprogramer.xyz/wp-content/plugins/owa/';var owa_cmds=owa_cmds||[];owa_cmds.push(['setApiEndpoint','http://blog.stackprogramer.xyz/index.php?owa_apiAction']);owa_cmds.push(['setSiteId','cf0899edf1f237d164ebc6b0c0f65be2']);owa_cmds.push(['trackPageView']);owa_cmds.push(['trackClicks']);owa_cmds.push(['trackDomStream']);(function(){var _owa=document.createElement('script');_owa.type='text/javascript';_owa.async=true;owa_baseUrl=('https:'==document.location.protocol?window.owa_baseSecUrl||owa_baseUrl.replace(/http:/,'https:'):owa_baseUrl);_owa.src=owa_baseUrl+'modules/base/js/owa.tracker-combined-min.js';var _owa_s=document.getElementsByTagName('script')[0];_owa_s.parentNode.insertBefore(_owa,_owa_s);}());
+//]]></script>
+<!-- End Open Web Analytics Code -->
+				
 
 </body>
 </html>
